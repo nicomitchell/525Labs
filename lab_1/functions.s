@@ -25,3 +25,7 @@ multiplication:
     MUL r0, r0, r1
     MOV pc, lr
     .end
+
+division:
+    MOV pc, lr
+    .end
