@@ -31,7 +31,7 @@ int main()
         default:
             printf("Unrecognized operation!\n");
         }
-        printf("Would you like to perform another operation? Y/N\n");
+        printf("\n\nWould you like to perform another operation? Y/N\n");
         char approve;
         while (1)
         {
