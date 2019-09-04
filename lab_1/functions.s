@@ -32,7 +32,7 @@ multiplication:
 division:
     .fnstart
     loop:
-        ldr r3, r0
+        LDR r3, r0
         SUBS r3, r3, r1
         ADDPL r0, r0, #1
         BPL loop
