@@ -3,13 +3,13 @@
     .global subtraction
     .global multiplication
     .global division
-    .global remainder
+    .global remain
 
     .type addition %function
     .type subtraction %function
     .type multiplication %function
     .type division %function
-    .type remainder %function
+    .type remain %function
 
 addition:
     .fnstart
@@ -41,7 +41,7 @@ division:
     MOV pc, lr
     .fnend
 
-remainder:
+remain:
     .fnstart
     MOV r3, r0
     MOV r2,#0
@@ -49,7 +49,7 @@ remainder:
         SUBS r3, r3, r1
         BPL loop_D
     ADDMI r3, r3, r1
-    MOV r0, r2
+    MOV r0, r3
     MOV pc, lr
     .fnend
 
