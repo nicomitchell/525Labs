@@ -1,0 +1,6 @@
+FROM raspbian/stretch
+
+COPY calculator.c code
+COPY functions.s code
+
+CMD gcc code/calculator.c code/functions.s
