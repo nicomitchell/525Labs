@@ -3,11 +3,13 @@
     .global subtraction
     .global multiplication
     .global division
+    .global remainder
 
     .type addition %function
     .type subtraction %function
     .type multiplication %function
     .type division %function
+    .type remainder %function
 
 addition:
     .fnstart
@@ -29,6 +31,13 @@ multiplication:
 
 division:
     .fnstart
+    loop:
+        ldr r3, r0
+        SUBS r3, r3, r1
+        ADDPL r0, r0, #1
+        BPL loop
     MOV pc, lr
     .fnend
 
+remainder:
+    .fnstart
