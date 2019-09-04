@@ -1,14 +1,12 @@
     .section ".text"
     .global addition
-    .type addition %function
-
     .global subtraction
-    .type subtraction %function
-
     .global multiplication
-    .type multiplication %function
-
     .global division
+
+    .type addition %function
+    .type subtraction %function
+    .type multiplication %function
     .type division %function
 
 addition:
