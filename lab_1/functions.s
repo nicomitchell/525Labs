@@ -37,7 +37,7 @@ division:
         SUBS r3, r3, r1
         ADDPL r2, r2, #1
         BPL loop
-    MOV r2, r0
+    MOV r0, r2
     MOV pc, lr
     .fnend
 
