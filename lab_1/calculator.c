@@ -32,9 +32,9 @@ int main()
         default:
             printf("Unrecognized operation!\n");
         }
-        scanf("%c", NULL);
-        printf("\n\nWould you like to perform another operation? Y/N\n");
         char approve;
+        scanf("%c", &approve);
+        printf("\n\nWould you like to perform another operation? Y/N\n");
         while (1)
         {
             scanf("%c", &approve);
