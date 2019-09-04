@@ -18,16 +18,16 @@ int main()
         switch (operation)
         {
         case '+':
-            printf(" = %d", addition(op1, op2));
+            printf("%d %c %d = %d", op1, operation, op2, addition(op1, op2));
             break;
         case '-':
-            printf(" = %d", subtraction(op1, op2));
+            printf("%d %c %d = %d", op1, operation, op2, subtraction(op1, op2));
             break;
         case '*':
-            printf(" = %d", multiplication(op1, op2));
+            printf("%d %c %d = %d", op1, operation, op2, multiplication(op1, op2));
             break;
         case '/':
-            printf(" = %d r %d", division(op1, op2), remain(op1, op2));
+            printf("%d %c %d = %d r %d", op1, operation, op2, division(op1, op2), remain(op1, op2));
         default:
             printf("Unrecognized operation!\n");
         }
