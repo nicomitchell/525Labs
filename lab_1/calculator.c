@@ -28,9 +28,11 @@ int main()
             break;
         case '/':
             printf("%d %c %d = %d r %d", op1, operation, op2, division(op1, op2), remain(op1, op2));
+            break;
         default:
             printf("Unrecognized operation!\n");
         }
+        scanf("%c", NULL);
         printf("\n\nWould you like to perform another operation? Y/N\n");
         char approve;
         while (1)
