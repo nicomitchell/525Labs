@@ -9,7 +9,7 @@ extern int remainder(int a, int b);
 int main()
 {
     int a = 10;
-    int b = 600;
+    int b = 622;
     printf("1 + 2 = %d\n", addition(a, b));
     printf("2 - 1 = %d\n", subtraction(b, a));
     printf("2 * 2 = %d\n", multiplication(b, b));
