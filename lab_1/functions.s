@@ -10,22 +10,25 @@
     .type division %function
 
 addition:
+    .fnstart
     ADD r0, r0, r1
     MOV pc, lr
-    .end
+    .fnend
 
 subtraction:
+    .fnstart
     SUB r0, r0, r1
     MOV pc, lr
-    .end
+    .fnend
 
 multiplication:
+    .fnstart
     MUL r0, r0, r1
     MOV pc, lr
-    .end
+    .fnend
 
 division:
+    .fnstart
     MOV pc, lr
-    .end
+    .fnend
 
-    
