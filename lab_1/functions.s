@@ -43,3 +43,12 @@ division:
 
 remainder:
     .fnstart
+    MOV r3, r0
+    MOV r2,#0
+    loop:    
+        SUBS r3, r3, r1
+        BPL loop
+    ADDMI r3, r3, r1
+    MOV r0, r2
+    MOV pc, lr
+    .fnend
