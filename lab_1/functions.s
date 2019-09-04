@@ -31,9 +31,9 @@ multiplication:
 
 division:
     .fnstart
-    loop:
-        MOV r3, r0
-        MOV r2,#0
+    MOV r3, r0
+    MOV r2,#0
+    loop:    
         SUBS r3, r3, r1
         ADDPL r2, r2, #1
         BPL loop
