@@ -45,10 +45,11 @@ remainder:
     .fnstart
     MOV r3, r0
     MOV r2,#0
-    loop:    
+    loop_D:    
         SUBS r3, r3, r1
-        BPL loop
+        BPL loop_D
     ADDMI r3, r3, r1
     MOV r0, r2
     MOV pc, lr
     .fnend
+
