@@ -8,8 +8,8 @@ extern int remainder(int a, int b);
 
 int main()
 {
-    int a = 1;
-    int b = 2;
+    int a = 10;
+    int b = 600;
     printf("1 + 2 = %d\n", addition(a, b));
     printf("2 - 1 = %d\n", subtraction(b, a));
     printf("2 * 2 = %d\n", multiplication(b, b));
